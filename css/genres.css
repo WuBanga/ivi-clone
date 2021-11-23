@@ -1,0 +1,63 @@
+@font-face {
+  font-family: icons;
+  src: url("../iconfont.ttf");
+}
+
+.genres {
+  display: flex;
+  flex-flow: column nowrap;
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 24px 0;
+  gap: 1rem;
+}
+
+.genres__header {
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+}
+
+.genres-bar {
+  overflow: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.genres-bar__genre-card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-background);
+  color: white;
+  border-radius: 8px;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 150px;
+  padding: 24px 8px;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.genres__genre-icon {
+  position: relative;
+  font-family: icons;
+  font-size: 32px;
+}
+
+.genres__genre-icon::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: attr(icon-inner);
+  color: var(--icon-inner-color);
+}
+
+.genres__genre-icon::after {
+  content: attr(icon-outer);
+  color: var(--icon-outer-color);
+}

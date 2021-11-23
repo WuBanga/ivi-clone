@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: column wrap;
   padding: 32px 0px 16px;
-  max-width: 1240px;
+  max-width: 1216px;
   margin: 0 auto;
   gap: 1.2rem;
 }
@@ -10,7 +10,6 @@
 .catalog__header {
   color: white;
   font-size: 40px;
-  padding: 0 25px;
 }
 
 .catalog__categories {
@@ -21,29 +20,6 @@
   justify-content: space-between;
   gap: 0.8rem;
   max-width: 1216px;
-  padding: 0 12px;
-}
-
-.catalog__categories::-webkit-scrollbar {
-  display: none;
-}
-
-.catalog__categories::before,
-.catalog__categories::after {
-  cursor: pointer;
-  align-self: center;
-  position: sticky;
-  background-color: var(--primary-background);
-}
-
-.catalog__categories::before {
-  left: -16px;
-  content: url("../img/left-arrow.svg");
-}
-
-.catalog__categories::after {
-  right: -16px;
-  content: url("../img/right-arrow.svg");
 }
 
 .catalog__category {
