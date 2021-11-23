@@ -1,5 +1,6 @@
 @import "defaults.css";
 @import "variables.css";
+@import "common.css";
 @import "header.css";
 @import "catalog.css";
 @import "filters.css";

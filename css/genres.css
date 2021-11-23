@@ -27,11 +27,7 @@
   gap: 1.4rem;
 }
 
-.genres-bar::-webkit-scrollbar {
-  display: none;
-}
-
-.genres-bar__genre-box {
+.genres-bar__genre-card {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
@@ -47,17 +43,13 @@
   cursor: pointer;
 }
 
-.genres__genre__icon {
+.genres__genre-icon {
   position: relative;
   font-family: icons;
   font-size: 32px;
 }
 
-/* .genres__genre__icon::before,
-.genres__genre__icon::after {
-} */
-
-.genres__genre__icon::before {
+.genres__genre-icon::before {
   position: absolute;
   left: 0;
   top: 0;
@@ -65,7 +57,7 @@
   color: var(--icon-inner-color);
 }
 
-.genres__genre__icon::after {
+.genres__genre-icon::after {
   content: attr(icon-outer);
   color: var(--icon-outer-color);
 }
