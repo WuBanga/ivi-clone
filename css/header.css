@@ -4,17 +4,14 @@
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
-  max-width: 1240px;
-  margin: 0 auto;
+  width: 100%;
   gap: 1rem;
-  padding: 0 12px;
 }
 
 .header::after {
-  --offset: 12px;
   background-color: rgba(255, 255, 255, 0.12);
-  right: var(--offset);
-  left: var(--offset);
+  right: 0;
+  left: 0;
   bottom: 0;
   height: 1px;
   content: "";

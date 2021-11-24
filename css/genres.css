@@ -6,8 +6,7 @@
 .genres {
   display: flex;
   flex-flow: column nowrap;
-  max-width: 1216px;
-  margin: 0 auto;
+  width: 100%;
   padding: 24px 0;
   gap: 1rem;
 }
