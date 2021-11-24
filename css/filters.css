@@ -1,11 +1,10 @@
 .filter-bar {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: column nowrap;
   justify-content: flex-start;
   gap: 1.5rem;
   padding: 1rem;
-  max-width: 1216px;
-  margin: 0 auto;
+  width: 100%;
   background-color: var(--secondary-background);
   border-radius: 6px;
 }

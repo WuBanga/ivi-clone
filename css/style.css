@@ -2,6 +2,8 @@
 @import "variables.css";
 @import "common.css";
 @import "header.css";
+@import "section.css";
+@import "content.css";
 @import "catalog.css";
 @import "filters.css";
 @import "genres.css";

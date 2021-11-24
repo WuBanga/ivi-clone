@@ -1,0 +1,11 @@
+.content {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  gap: 1.4rem;
+}
+
+.content__header {
+  color: white;
+  font-size: 40px;
+}
