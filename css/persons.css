@@ -1,0 +1,29 @@
+.persons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  gap: 1.4rem;
+}
+
+.person-card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 154px;
+  cursor: pointer;
+}
+
+.person-card__photo {
+  overflow: hidden;
+  width: 154px;
+  height: 154px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.person-card__person-text {
+  color: var(--text);
+}
