@@ -37,7 +37,7 @@
   max-width: 154px;
 }
 
-.movie-card__default-poster {
+.movie-card__poster--empty {
   display: flex;
   justify-content: center;
   align-items: center;
