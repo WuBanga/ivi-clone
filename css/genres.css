@@ -11,12 +11,6 @@
   gap: 1rem;
 }
 
-.genres__header {
-  font-size: 24px;
-  font-weight: 900;
-  color: white;
-}
-
 .genres-bar {
   overflow: auto;
   display: flex;

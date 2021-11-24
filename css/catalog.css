@@ -6,11 +6,6 @@
   gap: 1.2rem;
 }
 
-.catalog__header {
-  color: white;
-  font-size: 40px;
-}
-
 .catalog__categories {
   overflow: auto;
   white-space: nowrap;
