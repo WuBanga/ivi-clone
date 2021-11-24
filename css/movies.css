@@ -1,12 +1,4 @@
-.movie-list {
-  display: flex;
-  flex-flow: column nowrap;
-  gap: 1rem;
-  width: 100%;
-}
-
-.movie-bar {
-  overflow: auto;
+.movies {
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;

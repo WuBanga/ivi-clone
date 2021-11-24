@@ -1,0 +1,16 @@
+.section {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  gap: 1rem;
+}
+
+.section__header {
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+}
+
+.section__body {
+  overflow: auto;
+}

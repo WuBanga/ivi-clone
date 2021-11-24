@@ -5,22 +5,13 @@
 
 .genres {
   display: flex;
-  flex-flow: column nowrap;
-  width: 100%;
-  padding: 24px 0;
-  gap: 1rem;
-}
-
-.genres-bar {
-  overflow: auto;
-  display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   gap: 1.4rem;
 }
 
-.genres-bar__genre-card {
+.genres__genre-card {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
