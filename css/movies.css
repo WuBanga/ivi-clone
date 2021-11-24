@@ -1,0 +1,51 @@
+.movie-list {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem;
+  max-width: 1216px;
+  margin: 0 auto;
+}
+
+.movie-list__header {
+  font-size: 24px;
+  font-weight: 900;
+  color: white;
+}
+
+.movie-bar {
+  overflow: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: stretch;
+  gap: 1.4rem;
+}
+
+.movie-card {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 154px;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.movie-card__poster {
+  border-radius: 8px;
+  max-width: 154px;
+}
+
+.movie-card__poster--empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--secondary-background);
+  width: 154px;
+  height: 231px;
+}
+
+.movie-card__text {
+  color: var(--text);
+}
