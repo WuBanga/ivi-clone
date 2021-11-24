@@ -1,7 +1,6 @@
 .catalog {
   display: flex;
   flex-flow: column nowrap;
-  /* padding: 32px 0px 16px; */
   width: 100%;
   gap: 1.2rem;
 }
