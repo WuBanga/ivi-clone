@@ -1,4 +1,5 @@
 import { requestMovies } from "./api.js";
+import { ElementBuilder } from "./components/element.js";
 
 const posterPath = "https://image.tmdb.org/t/p/original";
 
@@ -24,40 +25,42 @@ export async function fillMovies(sectionId, movieType) {
 }
 
 function createMovieCard(imgSrc, imgAlt, movieName) {
-  const movieCard = document.createElement("a");
-  const movieCardPoster = document.createElement("img");
-  const movieCardText = document.createElement("p");
+  const movieCardText = new ElementBuilder("p")
+    .setClasses(["movie-card__text"])
+    .setText(movieName)
+    .build();
 
-  movieCard.classList.add("movie-card");
-  movieCardPoster.classList.add("movie-card__poster");
-  movieCardText.classList.add("movie-card__text");
+  const movieCardPoster = new ElementBuilder("img")
+    .setClasses(["movie-card__poster"])
+    .setAttributes({
+      src: imgSrc,
+      alt: imgAlt,
+    })
+    .build();
 
-  movieCard.appendChild(movieCardPoster);
-  movieCard.appendChild(movieCardText);
-
-  movieCardPoster.src = imgSrc;
-  movieCardPoster.alt = imgAlt;
-
-  movieCardText.textContent = movieName;
+  const movieCard = new ElementBuilder("a")
+    .setClasses(["movie-card"])
+    .setChildren([movieCardPoster, movieCardText])
+    .build();
 
   return movieCard;
 }
 
 function createEmptyMovieCard() {
-  const movieCard = document.createElement("a");
-  const movieCardPoster = document.createElement("div");
-  const movieCardText = document.createElement("p");
+  const movieCardText = new ElementBuilder("p")
+    .setClasses(["movie-card__text"])
+    .setText("Посмотреть все")
+    .build();
 
-  movieCard.classList.add("movie-card");
-  movieCardPoster.classList.add(
-    "movie-card__poster",
-    "movie-card__poster--empty"
-  );
-  movieCardText.classList.add("movie-card__text");
+  const movieCardPoster = new ElementBuilder("div")
+    .setClasses(["movie-card__poster", "movie-card__poster--empty"])
+    .setChildren([movieCardText])
+    .build();
 
-  movieCard.appendChild(movieCardPoster);
-  movieCardPoster.appendChild(movieCardText);
+  const movieCard = new ElementBuilder("a")
+    .setClasses(["movie-card"])
+    .setChildren([movieCardPoster, movieCardText])
+    .build();
 
-  movieCardText.textContent = "Посмотреть все";
   return movieCard;
 }
