@@ -7,18 +7,18 @@ export async function fillPopularMovies() {
 
   const data = await requestPopularMovies();
 
-  let movieCardArray = [];
+  let movieCards = [];
 
   for (const movie of data.results) {
     const { poster_path, title } = movie;
     const imgSrc = `${posterPath}${poster_path}`;
     const imgAlt = title;
     const movieName = title;
-    movieCardArray.push(createMovieCard(imgSrc, imgAlt, movieName));
+    movieCards.push(createMovieCard(imgSrc, imgAlt, movieName));
   }
 
-  movieCardArray.push(createEmptyMovieCard());
-  movieCardArray.forEach((movieCard) => {
+  movieCards.push(createEmptyMovieCard());
+  movieCards.forEach((movieCard) => {
     popularMoviesSection.appendChild(movieCard);
   });
 }
