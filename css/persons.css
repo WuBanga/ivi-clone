@@ -22,8 +22,6 @@
   border-radius: 50%;
   object-fit: cover;
   background-color: var(--secondary-background);
-  line-height: 154px;
-  text-align: center;
 }
 
 .person-card__person-text {
