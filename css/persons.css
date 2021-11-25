@@ -21,6 +21,7 @@
   height: 154px;
   border-radius: 50%;
   object-fit: cover;
+  background-color: var(--secondary-background);
 }
 
 .person-card__person-text {
