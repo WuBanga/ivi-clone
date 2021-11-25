@@ -34,3 +34,10 @@
 .movie-card__text {
   color: var(--text);
 }
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  justify-items: start;
+  gap: 1.5rem;
+}
