@@ -13,3 +13,10 @@ export async function requestMovies(type) {
   const response = await fetch(path);
   return await response.json();
 }
+
+export async function requestPersons() {
+  const path = `https://api.themoviedb.org/3/person/popular?api_key=${apiKey}&language=ru-RU`;
+
+  const response = await fetch(path);
+  return await response.json();
+}

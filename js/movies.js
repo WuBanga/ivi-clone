@@ -1,5 +1,8 @@
 import { requestMovies } from "./api.js";
-import { ElementBuilder } from "./components/element.js";
+import {
+  createMovieCard,
+  createEmptyMovieCard,
+} from "./components/movieCard.js";
 
 const posterPath = "https://image.tmdb.org/t/p/original";
 
@@ -22,45 +25,4 @@ export async function fillMovies(sectionId, movieType) {
   movieCards.forEach((movieCard) => {
     moviesSection.appendChild(movieCard);
   });
-}
-
-function createMovieCard(imgSrc, imgAlt, movieName) {
-  const movieCardText = new ElementBuilder("p")
-    .setClasses(["movie-card__text"])
-    .setText(movieName)
-    .build();
-
-  const movieCardPoster = new ElementBuilder("img")
-    .setClasses(["movie-card__poster"])
-    .setAttributes({
-      src: imgSrc,
-      alt: imgAlt,
-    })
-    .build();
-
-  const movieCard = new ElementBuilder("a")
-    .setClasses(["movie-card"])
-    .setChildren([movieCardPoster, movieCardText])
-    .build();
-
-  return movieCard;
-}
-
-function createEmptyMovieCard() {
-  const movieCardText = new ElementBuilder("p")
-    .setClasses(["movie-card__text"])
-    .setText("Посмотреть все")
-    .build();
-
-  const movieCardPoster = new ElementBuilder("div")
-    .setClasses(["movie-card__poster", "movie-card__poster--empty"])
-    .setChildren([movieCardText])
-    .build();
-
-  const movieCard = new ElementBuilder("a")
-    .setClasses(["movie-card"])
-    .setChildren([movieCardPoster, movieCardText])
-    .build();
-
-  return movieCard;
 }
