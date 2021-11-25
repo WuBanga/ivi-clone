@@ -1,28 +1,29 @@
 import { requestPopularMovies } from "./api.js";
 
-export function fillPopularMovies() {
-  const popularMoviesSection = document.querySelector("section div.movies");
+const posterPath = "https://image.tmdb.org/t/p/original";
 
-  const posterPath = "https://image.tmdb.org/t/p/original";
+export async function fillPopularMovies() {
+  const popularMoviesSection = document.querySelector("#popular-movies");
 
-  requestPopularMovies()
-    .then((data) => {
-      for (const movie of data.results) {
-        const { poster_path, title } = movie;
-        const imgSrc = `${posterPath}${poster_path}`;
-        const imgAlt = title;
-        const movieName = title;
-        createMovieCard(popularMoviesSection, imgSrc, imgAlt, movieName);
-      }
+  const data = await requestPopularMovies();
 
-      createEmptyMovieCard(popularMoviesSection);
-    })
-    .catch((err) => {
-      console.error(err);
-    });
+  let movieCardArray = [];
+
+  for (const movie of data.results) {
+    const { poster_path, title } = movie;
+    const imgSrc = `${posterPath}${poster_path}`;
+    const imgAlt = title;
+    const movieName = title;
+    movieCardArray.push(createMovieCard(imgSrc, imgAlt, movieName));
+  }
+
+  movieCardArray.push(createEmptyMovieCard());
+  movieCardArray.forEach((movieCard) => {
+    popularMoviesSection.appendChild(movieCard);
+  });
 }
 
-function createMovieCard(section, imgSrc, imgAlt, movieName) {
+function createMovieCard(imgSrc, imgAlt, movieName) {
   const movieCard = document.createElement("a");
   const movieCardPoster = document.createElement("img");
   const movieCardText = document.createElement("p");
@@ -39,10 +40,10 @@ function createMovieCard(section, imgSrc, imgAlt, movieName) {
 
   movieCardText.textContent = movieName;
 
-  section.appendChild(movieCard);
+  return movieCard;
 }
 
-function createEmptyMovieCard(section) {
+function createEmptyMovieCard() {
   const movieCard = document.createElement("a");
   const movieCardPoster = document.createElement("div");
   const movieCardText = document.createElement("p");
@@ -55,8 +56,8 @@ function createEmptyMovieCard(section) {
   movieCardText.classList.add("movie-card__text");
 
   movieCard.appendChild(movieCardPoster);
-  movieCard.appendChild(movieCardText);
+  movieCardPoster.appendChild(movieCardText);
 
   movieCardText.textContent = "Посмотреть все";
-  section.appendChild(movieCard);
+  return movieCard;
 }
