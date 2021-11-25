@@ -1,5 +1,8 @@
-img/
 .vscode/
+.env
+img/
 posters/
 persons/
 todo.md
+requests/
+js/
