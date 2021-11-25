@@ -1,11 +1,11 @@
-import { requestPopularMovies } from "./api.js";
+import { requestMovies } from "./api.js";
 
 const posterPath = "https://image.tmdb.org/t/p/original";
 
-export async function fillPopularMovies() {
-  const popularMoviesSection = document.querySelector("#popular-movies");
+export async function fillMovies(sectionId, movieType) {
+  const moviesSection = document.querySelector(`#${sectionId}`);
 
-  const data = await requestPopularMovies();
+  const data = await requestMovies(movieType);
 
   let movieCards = [];
 
@@ -19,7 +19,7 @@ export async function fillPopularMovies() {
 
   movieCards.push(createEmptyMovieCard());
   movieCards.forEach((movieCard) => {
-    popularMoviesSection.appendChild(movieCard);
+    moviesSection.appendChild(movieCard);
   });
 }
 

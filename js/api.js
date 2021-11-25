@@ -7,8 +7,8 @@ export async function getSearchResults(query) {
   return await response.json();
 }
 
-export async function requestPopularMovies() {
-  const path = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=ru-RU`;
+export async function requestMovies(type) {
+  const path = `https://api.themoviedb.org/3/movie/${type}?api_key=${apiKey}&language=ru-RU&region=RU`;
 
   const response = await fetch(path);
   return await response.json();
