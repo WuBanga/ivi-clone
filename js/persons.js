@@ -14,7 +14,7 @@ export async function fillPersons() {
     const { profile_path, name } = person;
     const imgSrc = profile_path ? `${posterPath}${profile_path}` : null;
     const imgAlt = name;
-    const [personName, personSurname] = name.split(" ");
+    const [personName, ...personSurname] = name.split(" ");
     personsCards.push(
       createPersonCard(imgSrc, imgAlt, personName, personSurname)
     );
