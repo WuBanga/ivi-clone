@@ -3,7 +3,7 @@ import { ElementBuilder } from "./element.js";
 export function createPersonCard(imgSrc, imgAlt, personName, personSurname) {
   const personCardSurnameText = new ElementBuilder("p")
     .setClasses(["person-card__person-text"])
-    .setText(personSurname)
+    .setText(personSurname.join(" "))
     .build();
 
   const personCardNameText = new ElementBuilder("p")
