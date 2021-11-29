@@ -25,7 +25,7 @@
   user-select: none;
 }
 
-.filter-bar__filter-btn {
+.filter-bar__filter-button {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -42,7 +42,7 @@
   gap: 1rem;
 }
 
-.filter-bar__filter--active .filter-bar__filter-btn {
+.filter-bar__filter--active .filter-bar__filter-button {
   background-color: var(--active-filter);
 }
 
@@ -51,7 +51,7 @@
   display: none;
   position: absolute;
   background-color: var(--filter);
-  width: 280%;
+  width: 625px;
   border-radius: 4px;
   padding: 1rem;
   z-index: 1;
@@ -95,7 +95,7 @@
   font-weight: 500;
 }
 
-.filter-bar__genreslist {
+.filter-bar__list {
   position: relative;
   display: grid;
   padding-top: 1rem;
@@ -105,7 +105,7 @@
   border-top: 1px solid var(--active-filter);
 }
 
-.filter-bar__genreslist-item {
+.filter-bar__list-item {
   text-decoration: none;
   color: rgba(217, 215, 224, 0.8);
   font-size: 13px;
@@ -113,7 +113,7 @@
   font-style: normal;
 }
 
-.filter-bar__genreslist-item:hover {
+.filter-bar__list-item:hover {
   color: white;
 }
 

@@ -8,10 +8,8 @@ window.onload = () => {
   fillMovies("upcoming-movies", "upcoming");
   fillPersons();
 
-  const filterBtns = document.querySelectorAll(".filter-bar__filter-btn");
+  const filterBtns = document.querySelectorAll(".filter-bar__filter-button");
   filterBtns.forEach((btn) => {
-    btn.addEventListener("click", (event) => {
-      popOverFilterMenu(event);
-    });
+    btn.addEventListener("click", popOverFilterMenu);
   });
 };
