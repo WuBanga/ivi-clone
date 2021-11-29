@@ -141,94 +141,419 @@
       <section class="filter-bar">
         <div class="filter-bar__filters">
           <div class="filter-bar__filter">
-            <p>Жанры</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="white"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+            <div class="filter-bar__filter-btn">
+              <p>Жанры</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+            <div class="filter-bar__popover">
+              <div class="section__body genres genres--small hidden-scroll">
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE16F;"
+                    icon-outer="&#xE16E;"
+                  ></div>
+                  <p>Драмы</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE152;"
+                    icon-outer="&#xE16E;"
+                  ></div>
+                  <p>Комедии</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE12F;"
+                    icon-outer="&#xE130;"
+                  ></div>
+                  <p>Боевики</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE1E0;"
+                    icon-outer="&#xE1E1;"
+                  ></div>
+                  <p>Триллеры</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE139;"
+                    icon-outer="&#xE138;"
+                  ></div>
+                  <p>Приключения</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE18A;"
+                    icon-outer="&#xE18B;"
+                  ></div>
+                  <p>Зарубежные</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE1A8;"
+                    icon-outer="&#xE1A7;"
+                  ></div>
+                  <p>Мелодрамы</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE17D;"
+                    icon-outer="&#xE17C;"
+                  ></div>
+                  <p>Фантастика</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE181;"
+                    icon-outer="&#xE182;"
+                  ></div>
+                  <p>Фэнтези</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE178;"
+                    icon-outer="&#xE179;"
+                  ></div>
+                  <p>Семейные</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE15D;"
+                    icon-outer="&#xE15E;"
+                  ></div>
+                  <p>Детективы</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE192;"
+                    icon-outer="&#xE193;"
+                  ></div>
+                  <p>Ужасы</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE1D3;"
+                    icon-outer="&#xE1D4;"
+                  ></div>
+                  <p>Советские</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE1AC;"
+                    icon-outer="&#xE1AD;"
+                  ></div>
+                  <p>Военные</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE1C7;"
+                    icon-outer="&#xE1C8;"
+                  ></div>
+                  <p>Русские</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE18F;"
+                    icon-outer="&#xE190;"
+                  ></div>
+                  <p>Исторические</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE19B;"
+                    icon-outer="&#xE19C;"
+                  ></div>
+                  <p>Для детей</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE155;"
+                    icon-outer="&#xE156;"
+                  ></div>
+                  <p>По комиксам</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE162;"
+                    icon-outer="&#xE163;"
+                  ></div>
+                  <p>Катастрофы</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE145;"
+                    icon-outer="&#xE146;"
+                  ></div>
+                  <p>Артхаус</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE1C0;"
+                    icon-outer="&#xE1C1;"
+                  ></div>
+                  <p>Мистические</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE159;"
+                    icon-outer="&#xE15A;"
+                  ></div>
+                  <p>Криминал</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE1DB;"
+                    icon-outer="&#xE1DC;"
+                  ></div>
+                  <p>Спорт</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE148;"
+                    icon-outer="&#xE149;"
+                  ></div>
+                  <p>Биография</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE1E8;"
+                    icon-outer="&#xE1E9;"
+                  ></div>
+                  <p>Вестерн</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE1B3;"
+                    icon-outer="&#xE1B4;"
+                  ></div>
+                  <p>Музыкальные</p>
+                </div>
+                <div class="genres__genre-card genres__genre-card--small">
+                  <div
+                    class="genres__genre-icon genres__genre-icon--small"
+                    icon-inner="&#xE173;"
+                    icon-outer="&#xE174;"
+                  ></div>
+                  <p>Эротика</p>
+                </div>
+              </div>
+              <ul class="filter-bar__genreslist">
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Артхаус</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Биография</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Боевики</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Вестерн</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Военные</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Детективы</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Для детей</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#"
+                    >Документальные</a
+                  >
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Драмы</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Зарубежные</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#"
+                    >Исторические</a
+                  >
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Катастрофы</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Комедии</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Криминал</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Мелодрамы</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#"
+                    >Мистические</a
+                  >
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#"
+                    >Музыкальные</a
+                  >
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#"
+                    >По комиксам</a
+                  >
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#"
+                    >Приключения</a
+                  >
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Русские</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Семейные</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Советские</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Спорт</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Триллеры</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Ужасы</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Фантастика</a>
+                </li>
+                <li>
+                  <a class="filter-bar__genreslist-item" href="#">Фэнтези</a>
+                </li>
+              </ul>
+            </div>
           </div>
           <div class="filter-bar__filter">
-            <p>Поджанры</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="white"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+            <div class="filter-bar__filter-btn">
+              <p>Поджанры</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
           </div>
           <div class="filter-bar__filter">
-            <p>Страны</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="white"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+            <div class="filter-bar__filter-btn">
+              <p>Страны</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
           </div>
           <div class="filter-bar__filter">
-            <p>Годы</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="white"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+            <div class="filter-bar__filter-btn">
+              <p>Годы</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
           </div>
           <div class="filter-bar__filter">
-            <p>Рейтинг</p>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="22"
-              height="22"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="white"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
+            <div class="filter-bar__filter-btn">
+              <p>Рейтинг</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="22"
+                height="22"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="white"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
           </div>
         </div>
         <div class="filter-bar__tags">
