@@ -55,6 +55,7 @@
   border-radius: 4px;
   padding: 1rem;
   z-index: 1;
+  animation: fade-in 0.15s ease;
 }
 
 .filter-bar__tags {
@@ -110,4 +111,25 @@
   font-size: 13px;
   font-weight: 500;
   font-style: normal;
+}
+
+.filter-bar__genreslist-item:hover {
+  color: white;
+}
+
+@keyframes fade-in {
+  from {
+    top: 110%;
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    top: 100%;
+    opacity: 1;
+  }
 }
