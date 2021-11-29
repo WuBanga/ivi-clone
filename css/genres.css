@@ -11,6 +11,11 @@
   gap: 1.4rem;
 }
 
+.genres--small {
+  position: relative;
+  gap: 0.8rem;
+}
+
 .genres__genre-card {
   display: flex;
   flex-flow: column nowrap;
@@ -25,6 +30,21 @@
   padding: 24px 8px;
   gap: 0.3rem;
   cursor: pointer;
+}
+
+.genres__genre-card--small {
+  border-radius: 6px;
+  padding: 16px 8px;
+  flex-basis: 108px;
+  gap: 0;
+  height: 88px;
+  background-color: var(--filter);
+  border: 1px solid var(--active-filter);
+  font-size: 13px;
+}
+
+.genres__genre-card--small:hover {
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 .genres__genre-icon {
@@ -44,4 +64,17 @@
 .genres__genre-icon::after {
   content: attr(icon-outer);
   color: var(--icon-outer-color);
+}
+
+.genres__genre-icon--small::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: attr(icon-inner);
+  color: white;
+}
+
+.genres__genre-icon--small::after {
+  content: attr(icon-outer);
+  color: white;
 }
