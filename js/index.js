@@ -14,6 +14,6 @@ window.onload = () => {
     btn.addEventListener("click", popOverFilterMenu);
   });
 
-  const menuTabs = document.querySelector(".header__hamburger-button");
+  const menuTabs = document.querySelector("#menu");
   menuTabs.addEventListener("click", toggleMenu);
 };
