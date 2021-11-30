@@ -28,7 +28,6 @@
   flex-shrink: 0;
   flex-basis: 154px;
   padding: 24px 8px;
-  gap: 0.3rem;
   cursor: pointer;
 }
 
@@ -77,4 +76,24 @@
 .genres__genre-icon--small::after {
   content: attr(icon-outer);
   color: white;
+}
+
+@media (max-width: 900px) {
+  .genres__genre-card {
+    flex-basis: 172px;
+    height: 108px;
+  }
+}
+
+@media (max-width: 600px) {
+  .genres {
+    gap: 1rem;
+  }
+  .genres__genre-card {
+    flex-basis: 112px;
+    height: 88px;
+  }
+  .genres__genre-text {
+    font-size: 13px;
+  }
 }

@@ -40,3 +40,24 @@
   grid-template-columns: repeat(7, 1fr);
   gap: 1.5rem;
 }
+
+@media (max-width: 900px) {
+  .movie-card {
+    flex-basis: 172px;
+  }
+  .movie-card__poster {
+    max-width: 172px;
+  }
+}
+
+@media (max-width: 600px) {
+  .movies {
+    gap: 1rem;
+  }
+  .movie-card {
+    flex-basis: 112px;
+  }
+  .movie-card__poster {
+    max-width: 112px;
+  }
+}

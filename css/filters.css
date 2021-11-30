@@ -11,9 +11,8 @@
 
 .filter-bar__filters {
   display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-between;
-  align-items: center;
+  flex-flow: row wrap;
+  justify-content: flex-start;
   gap: 0.8rem;
 }
 
@@ -60,7 +59,7 @@
 
 .filter-bar__tags {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   gap: 0.8rem;
 }
 
@@ -83,7 +82,7 @@
 .filter-bar__reset {
   display: flex;
   flex-flow: row nowrap;
-  justify-content: flex-start;
+  justify-content: stretch;
   align-items: center;
   gap: 0.3rem;
   cursor: pointer;
@@ -134,5 +133,23 @@
   100% {
     top: 100%;
     opacity: 1;
+  }
+}
+
+@media (max-width: 900px) {
+  .filter-bar__filters {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .filter-bar__filters {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .filter-bar__filter {
+    flex-grow: 1;
   }
 }
