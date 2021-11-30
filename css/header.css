@@ -22,7 +22,13 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
+  align-items: center;
   gap: 2rem;
+}
+
+.header__hamburger-button {
+  display: none;
+  padding: 0.7rem 0;
 }
 
 .header__logo {
@@ -87,4 +93,26 @@
   border-radius: 50%;
   width: 48px;
   height: 48px;
+}
+
+@media (max-width: 800px) {
+  /* body {
+    max-width: 776px;
+  } */
+  .header__hamburger-button {
+    display: flex;
+    background-color: var(--hamburger-color);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 48px;
+    height: 48px;
+  }
+  .header__tabs {
+    display: none;
+  }
+  .header__left {
+    gap: 0.5rem;
+  }
 }
