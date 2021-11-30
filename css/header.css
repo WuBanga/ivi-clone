@@ -28,7 +28,14 @@
 
 .header__hamburger-button {
   display: none;
-  padding: 0.7rem 0;
+  background-color: var(--hamburger-color);
+  border-radius: 8px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
 }
 
 .header__logo {
@@ -95,22 +102,35 @@
   height: 48px;
 }
 
-@media (max-width: 800px) {
-  /* body {
-    max-width: 776px;
-  } */
+@media (max-width: 900px) {
   .header__hamburger-button {
     display: flex;
-    background-color: var(--hamburger-color);
-    border-radius: 8px;
-    justify-content: center;
-    align-items: center;
-    border: none;
-    width: 48px;
-    height: 48px;
   }
   .header__tabs {
     display: none;
+    position: absolute;
+    top: 100%;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    gap: 0;
+    background-color: var(--secondary-background);
+    z-index: 1;
+    border-radius: 4px;
+    padding: 0 0.4rem;
+    margin: 0.2rem 0;
+  }
+  .header__tabs--active {
+    display: flex;
+  }
+  .header__tab {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    border-bottom: 1px solid var(--text);
+    padding: 1rem;
+  }
+  .header__tab:last-child {
+    border-bottom: none;
   }
   .header__left {
     gap: 0.5rem;

@@ -10,3 +10,9 @@
   color: white;
   font-size: 40px;
 }
+
+@media (max-width: 600px) {
+  .content__header {
+    font-size: 28px;
+  }
+}

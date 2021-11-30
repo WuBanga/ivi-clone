@@ -1,6 +1,7 @@
 import { fillMovies } from "./movies.js";
 import { fillPersons } from "./persons.js";
 import { popOverFilterMenu } from "./filters.js";
+import { toggleMenu } from "./header.js";
 
 window.onload = () => {
   fillMovies("popular-movies", "popular");
@@ -12,4 +13,7 @@ window.onload = () => {
   filterBtns.forEach((btn) => {
     btn.addEventListener("click", popOverFilterMenu);
   });
+
+  const menuTabs = document.querySelector(".header__hamburger-button");
+  menuTabs.addEventListener("click", toggleMenu);
 };

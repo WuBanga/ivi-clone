@@ -142,3 +142,14 @@
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
+@media (max-width: 600px) {
+  .filter-bar__filters {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  .filter-bar__filter {
+    flex-grow: 1;
+  }
+}

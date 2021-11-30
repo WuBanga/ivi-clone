@@ -27,3 +27,27 @@
 .person-card__person-text {
   color: var(--text);
 }
+
+@media (max-width: 900px) {
+  .person-card {
+    flex-basis: 172px;
+  }
+  .person-card__photo {
+    width: 172px;
+    height: 172px;
+  }
+}
+
+@media (max-width: 600px) {
+  .persons {
+    gap: 1rem;
+  }
+
+  .person-card {
+    flex-basis: 112px;
+  }
+  .person-card__photo {
+    width: 112px;
+    height: 112px;
+  }
+}
